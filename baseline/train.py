@@ -323,7 +323,7 @@ def main():
 
         # save model
         torch.save(model_instance.state_dict(), folder_name+'final.pth')
-        print("Trained feed forward net saved at resnet152_final_"+site+".pth")
+        print("Trained feed forward net saved at "+folder_name+'final.pth')
 
 if __name__ == '__main__':
     # This block only gets executed if you call the "train.py" script directly
