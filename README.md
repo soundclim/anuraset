@@ -1,4 +1,50 @@
-# AnuraSet: A dataset for classification of tropical anurans from passive acoustic monitoring
+# AnuraSet: AnuraSet: A large-scale acoustic multi-label dataset for neotropical anuran call classification in passive acoustic monitoring
+
+<!-- <img src="assets/examples.gif" width=100%> -->
+![DALL·E 2022-10-23 22.58.22 -  frog shouting because of hot temperature and acting weird in the middle of a  rainforest , Henri Rousseau painting ](assets/dalle_frog.png)
+
+The timing and intensity of calling activity in anuran amphibians, which has a central role in sexual selection and reproduction, are largely controlled by climatic conditions such as environmental temperature and humidity. Therefore, climate change is predicted to induce shifts in calling behavior and breeding phenology, species traits that can be tracked using passive acoustic monitoring (PAM). To construct robust algorithms that allow classifying species calls in a long-term monitoring program, it is fundamental to design adequate datasets and benchmarks in the wild.  We present a large-scale multi-species dataset of acoustics recordings of amphibians anuran from PAM recordings. The dataset comprises 27 hours of herpetologist annotations of 42 different species in different regions of Brazil. The classification task is unique and challenging due to the high species diversity, the long-tailed distribution, and frequent overlapping calls. We present a characterization of the challenges and a baseline model for the goals of the monitoring program. The dataset, including raw recordings, preprocessing code, and baseline code, is made available to promote collaboration between machine learning researchers and ecologists in solving the classification challenges toward understanding the effects of global change on biodiversity.
+
+
+## Installation instructions
+
+1. Install [Conda](http://conda.io/)
+
+2. Create environment and install requirements
+
+```bash
+conda create -n anuraset_env python=3.8 -y
+conda activate chorus_env
+onda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
+pip install -r requirements.txt
+```
+
+## Download dataset
+
+
+```bash
+python dataset/fetcher.py
+```
+
+## Reproduce baseline results
+
+
+1. Train (TODO:CHECK)
+
+```bash
+python baseline/train.py --config 
+configs/exp_resnet18.yaml
+```
+2. Inference (TODO:CHECK)
+
+```bash
+python baseline/evaluate.py --config 
+configs/exp_resnet18.yaml
+```
+3. Visualize results: Run notebook 
+
+
+# TODO: SELECT WHAT SHOULD BE INCLUDED
 
 > ###### [Overview](#esc-50-dataset-for-environmental-sound-classification) | [Download](#download) | [Results](#results) | [Repository content](#repository-content) | [License](#license) | [Citing](#citing) | [Caveats](#caveats) | [Changelog](#changelog)
 >
