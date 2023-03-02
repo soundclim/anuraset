@@ -11,11 +11,11 @@ model_states/
 inferences/
 
 #Other files
-.amlignore
-.amlignore.amltmp
-.gitignore.amltmp
+
 .ipynb_aml_checkpoints
 metadata_sample1000.csv
+.amlignore
+.amlignore.amltmp
 
 # Distribution / packaging
 .Python
