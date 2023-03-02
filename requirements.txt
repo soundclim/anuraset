@@ -1,0 +1,5 @@
+pandas==1.1.5
+PyYAML==6.0
+torchmetrics==0.11.3
+torchsummary==1.5.1
+tqdm==4.64.1
