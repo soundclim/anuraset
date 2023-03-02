@@ -229,9 +229,9 @@ def main():
     
     df = pd.read_csv(ANNOTATIONS_FILE)
 
-    for site in ['INCT20955','INCT4']:
+    for site in ['INCT4','INCT20955']:
         
-        folder_name = cfg['model_type']+'_without_'+{site}
+        folder_name = cfg['model_type'] + '_without_' + site +'/'
         df_site = df[df['site']!=site]   
         training_data = AnuraSet(
             annotations_file=df_site, 
@@ -321,9 +321,8 @@ def main():
         progress_bar_epoch.close()
         print("Finished training")
 
-
         # save model
-        torch.save(model_instance.state_dict(), "resnet152_final_"+site+".pth")
+        torch.save(model_instance.state_dict(), folder_name+'final.pth')
         print("Trained feed forward net saved at resnet152_final_"+site+".pth")
 
 if __name__ == '__main__':
