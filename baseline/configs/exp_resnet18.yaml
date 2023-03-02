@@ -1,0 +1,22 @@
+# Here's where you define experiment-specific hyperparameters.
+# You can also create lists and group parameters together into nested sub-parts.
+# In Python, this is all read as a dict.
+
+# environment/computational parameters
+seed: 32678456782       # random number generator seed (long integer value)
+device: cuda
+num_workers: 4
+
+# dataset parameters
+data_root: /mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu-baseline/code/Users/jscanass/anuraset_pruebas/data/datasets/anurasetv3
+num_classes: 42
+
+# training hyperparameters
+image_size: [224, 448] #[128, 512] 
+num_epochs: 10
+batch_size: 32
+learning_rate: 0.01
+weight_decay: 0.001
+model_type: resnet18
+pretrained: true
+multilabel: true
