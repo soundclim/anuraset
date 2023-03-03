@@ -64,16 +64,15 @@ python datasets/fetcher.py
 5. Train 
 
 ```bash
-python baseline/train.py --config 
-configs/exp_resnet18.yaml
+python baseline/train.py --config baseline/configs/exp_resnet18.yaml
 ```
 
 6. Inference
 
 ```bash
-python baseline/evaluate.py --config 
-configs/exp_resnet18.yaml
+python baseline/evaluate.py --config  baseline/configs/exp_resnet18.yaml
 ```
+
 7. Visualize results: Run notebook  (TODO)
 
 
