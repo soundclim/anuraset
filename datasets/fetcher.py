@@ -13,7 +13,7 @@ from urllib.request import urlopen
 ANURA_PUBLIC_URL = 'https://chorus.blob.core.windows.net/public/'
 
 # Set a user-writeable file-system location to put files:
-home = pjoin(op.expanduser('~'), '.chorus')
+home = pjoin(os.getcwd(), 'datasets')
 
 
 class FetcherError(Exception):
