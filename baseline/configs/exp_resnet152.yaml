@@ -8,9 +8,9 @@ device: cuda
 num_workers: 4
 
 # dataset parameters
-data_root: /mnt/batch/tasks/shared/LS_root/mounts/clusters/gpu-baseline/code/Users/jscanass/anuraset_pruebas/data/datasets/anurasetv3
+data_root: datasets/anuraset_v3/anurasetv3
 num_classes: 42
-
+folder_name: resnet152_4sites/
 # training hyperparameters
 image_size: [224, 448] #[128, 512] 
 num_epochs: 10
