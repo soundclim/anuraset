@@ -51,14 +51,14 @@ git clone https://github.com/soundclim/anuraset/
 ```bash
 cd anuraset
 conda create -n anuraset_env python=3.8 -y
-conda activate chorus_env
+conda activate anuraset_env
 conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
 pip install -r requirements.txt
 ```
 4. Download dataset 
 
 ```bash
-python dataset/fetcher.py
+python datasets/fetcher.py
 ```
 
 5. Train 
