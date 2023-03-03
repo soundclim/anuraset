@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Azure
+.amlignore
+.amlignore.amltmp
+
 # Distribution / packaging
 .Python
 build/
