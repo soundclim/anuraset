@@ -163,7 +163,7 @@ def main():
     # init random number generator seed (set at the start)
     init_seed(cfg.get('seed', None))
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device(cfg['device'])
     print(f"Using device {device}")
 
     # Define Transformation
