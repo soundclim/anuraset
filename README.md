@@ -34,9 +34,7 @@ Additionally we open the [raw data](http://github.com) and the [annotations](htt
 
 
 
-## Reproduce baseline results
-
-### Installation instructions
+## Installation instruction and reproduction of baseline results
 
 1. Install [Conda](http://conda.io/)
 
@@ -55,6 +53,12 @@ conda activate anuraset_env
 conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
 pip install -r requirements.txt
 ```
+
+> **Notes**
+> * The installation of dependencies where tested on Azure. If you want to run locally, you might have to change the way you install PyTorch. Check the [PyTorch official webpage](https://pytorch.org/get-started/locally/) for installation instruction on specific platforms.
+> * For **macOS** you might need to install [chardet: The Universal Character Encoding Detector](https://pypi.org/project/chardet/) with pip.
+
+
 4. Download dataset 
 
 ```bash
