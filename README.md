@@ -60,10 +60,8 @@ python baseline/train.py --config baseline/configs/exp_resnet18.yaml
 python baseline/evaluate.py --config  baseline/configs/exp_resnet18.yaml
 ```
 
-7. Visualize results: Run notebook  (TODO)
-
 
 ## Citing this work (TODO)
 
-..-
+...
 
