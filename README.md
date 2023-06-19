@@ -1,4 +1,4 @@
-# AnuraSet: A large-scale acoustic multi-label dataset for neotropical anuran call classification in passive acoustic monitoring
+·# AnuraSet: A large-scale acoustic multi-label dataset for neotropical anuran call classification in passive acoustic monitoring
 <div align="center">
 <img class="img-fluid" src="assets/dalle_frog.png" alt="img-verification" width="250" height="250">
 </div>
@@ -7,28 +7,15 @@ We present a large-scale multi-species dataset of acoustics recordings of amphib
 
 
 
-
-## TODO
-- [x] Download dataset using link and fetcher
-- [x] Baseline Code 
-- [ ] Notebook with analysis of baseline results
-- [ ] Preprocessing Code
-- [ ] Links to download raw audio and annotations
-- [ ] In deep explanation of data format
-- [ ] Evaluation explanation
-- [ ] Explicit assignation of LICENSE
-- [ ] Add .bib with publication
-
-
 ## Download
 
 The **Anuraset** is a labeled collection of 93k samples of 3-second-long passive acoustic monitoring recordings organized into 42 neotropical anurans species suitable for multi-label call classification. The dataset can be downloaded as a single .zip file (~10.5 GB):
 
-**[Download Anuraset](https://chorus.blob.core.windows.net/public/anurasetv3.zip)**
+**[Download Anuraset](https://zenodo.org/record/8056090/files/anuraset.zip?download=1)**
 
 A more thorough description of the dataset is available in the original [paper](http://github.com).
 
-Additionally we open the [raw data](http://github.com) and the [annotations](http://github.com). (TODO, check [this](https://github.com/visipedia/caltech-fish-counting/blob/main/README.md#data-download)) 
+Additionally, we open the raw data and all the annotations (weak and strong labels). You can download all the data in [Zenodo](https://zenodo.org/record/8056090).
 
 
 
@@ -59,11 +46,7 @@ pip install -r requirements.txt
 > * For **macOS** you might need to install [chardet: The Universal Character Encoding Detector](https://pypi.org/project/chardet/) with pip.
 
 
-4. Download dataset 
-
-```bash
-python datasets/fetcher.py
-```
+4. Download the data directly from Zenodo 
 
 5. Train 
 
@@ -78,45 +61,6 @@ python baseline/evaluate.py --config  baseline/configs/exp_resnet18.yaml
 ```
 
 7. Visualize results: Run notebook  (TODO)
-
-
-## Evaluation Procedure (TODO)
-
-...
-
-## Data Format (TODO)
-
-### Audio
-- `audio/*.wav`
-
-  2000 audio recordings in WAV format (5 seconds, 44.1 kHz, mono) with the following naming convention:
-  
-  `{FOLD}-{CLIP_ID}-{TAKE}-{TARGET}.wav`
-  
-  - `{FOLD}` - index of the cross-validation fold,
-  - `{CLIP_ID}` - ID of the original Freesound clip,
-  - `{TAKE}` - letter disambiguating between different fragments from the same Freesound clip,
-  - `{TARGET}` - class in numeric format [0, 49].
-### Metadata
-
-- `metadata.csv`
-
-  CSV file with the following structure:
-  
-  | <sub>filename</sub> | <sub>fold</sub> | <sub>target</sub> | <sub>category</sub> | <sub>esc10</sub> | <sub>src_file</sub> | <sub>take</sub> |
-  | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-  
-  The `esc10` column indicates if a given file belongs to the *ESC-10* subset (10 selected classes, CC BY license).
-  
-- [`meta/esc50-human.xlsx`](meta/esc50-human.xlsx)
-
-  Additional data pertaining to the crowdsourcing experiment (human classification accuracy).
-
-
-
-## License (TODO)
-
-...
 
 
 ## Citing this work (TODO)
