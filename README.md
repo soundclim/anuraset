@@ -1,4 +1,4 @@
-·# AnuraSet: A large-scale acoustic multi-label dataset for neotropical anuran call classification in passive acoustic monitoring
+# AnuraSet: A large-scale acoustic multi-label dataset for neotropical anuran call classification in passive acoustic monitoring
 <div align="center">
 <img class="img-fluid" src="assets/dalle_frog.png" alt="img-verification" width="250" height="250">
 </div>
