@@ -65,3 +65,7 @@ python baseline/evaluate.py --config  baseline/configs/exp_resnet18.yaml
 
 ...
 
+## Acknowledgments
+The authors acknowledge financial support from the intergovernmental Group on Earth Observations (GEO) and Microsoft, under the GEO-Microsoft Planetary Computer Programme (October 2021); São Paulo Research Foundation (FAPESP #2016/25358-3; #2019/18335-5); the National Council for Scientific and Technological Development (CNPq #302834/2020-6; #312338/2021-0, #307599/2021-3); National Institutes for Science and Technology (INCT) in Ecology, Evolution, and Biodiversity Conservation, supported by MCTIC/CNpq (proc. 465610/2014-5), FAPEG (proc. 201810267000023); CNPQ/MCTI/CONFAP-FAPS/PELD No 21/2020 (FAPESC 2021TR386); Comunidad de Madrid (2020-T1/AMB-20636, Atracción de Talento Investigador, Spain) and research projects funded by the European Commission (EAVESTROP–661408, Global Marie S. Curie fellowship, program H2020, EU); and the Ministerio de Economía, Industria y Competitividad (CGL2017-88764-R, MINECO/AEI/FEDER, Spain).
+
+
