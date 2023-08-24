@@ -240,12 +240,12 @@ fetch_anuraset_v3 = _make_fetcher(
     doc="Download the ANURA dataset version 3",
     unzip=True)
 
-# Example to download the anuraset v2 by using the default fetcher
+# Example to download the anuraset v3 by using the default fetcher
 #'''
 fetch_anuraset_v3()
 #'''
 
-# Example to download the anuraset v2 using a customized fetcher
+# Example to download the anuraset v3 using a customized fetcher
 '''
 custom_fetcher = _make_fetcher(
     "fetch_anuraset_v2",
