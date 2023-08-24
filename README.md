@@ -21,38 +21,37 @@ Additionally, we open the raw data and all the annotations (weak and strong labe
 
 2. Clone this repository
 
-```bash
-git clone https://github.com/soundclim/anuraset/
-```
+    ```bash
+    git clone https://github.com/soundclim/anuraset/
+    ```
 
 3. Create an environment and install requirements
 
-```bash
-cd anuraset
-conda create -n anuraset_env python=3.8 -y
-conda activate anuraset_env
-conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
-pip install -r requirements.txt
-```
+    ```bash
+    cd anuraset
+    conda create -n anuraset_env python=3.8 -y
+    conda activate anuraset_env
+    conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
+    pip install -r requirements.txt
+    ```
 
-> **Notes**
-> * The installation of dependencies where tested on Azure. If you want to run locally, you might have to change the way you install PyTorch. Check the [PyTorch official webpage](https://pytorch.org/get-started/locally/) for installation instruction on specific platforms.
-> * For **macOS** you might need to install [chardet: The Universal Character Encoding Detector](https://pypi.org/project/chardet/) with pip.
-
+    > **Notes**
+    > * The installation of dependencies where tested on Azure. If you want to run locally, you might have to change the way you install PyTorch. Check the [PyTorch official webpage](https://pytorch.org/get-started/locally/) for installation instruction on specific platforms.
+    > * For **macOS** you might need to install [chardet: The Universal Character Encoding Detector](https://pypi.org/project/chardet/) with pip.
 
 4. Download the data directly from Zenodo 
 
 5. Train 
 
-```bash
-python baseline/train.py --config baseline/configs/exp_resnet18.yaml
-```
+    ```bash
+    python baseline/train.py --config baseline/configs/exp_resnet18.yaml
+    ```
 
 6. Inference
 
-```bash
-python baseline/evaluate.py --config  baseline/configs/exp_resnet18.yaml
-```
+    ```bash
+    python baseline/evaluate.py --config  baseline/configs/exp_resnet18.yaml
+    ```
 
 ## Citing this work
 
