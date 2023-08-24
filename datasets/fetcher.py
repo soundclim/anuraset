@@ -254,7 +254,7 @@ custom_fetcher = _make_fetcher(
     ['datasetv2-multiclass_1.zip'],
     ['datasetv2-multiclass_1.zip'],
     ['e1fc835fac6ee7973ee307ae64a584e6'],
-    doc="Download the ANURA dataset by using a custome fetcher")
+    doc="Download the ANURA dataset by using a custom fetcher")
 
 custom_fetcher()
 '''
