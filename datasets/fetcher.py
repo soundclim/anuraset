@@ -247,7 +247,7 @@ fetch_anuraset_v3()
 
 # Example to download the anuraset v2 using a customized fetcher
 '''
-custome_fetcher = _make_fetcher(
+custom_fetcher = _make_fetcher(
     "fetch_anuraset_v2",
     "/home/jrudascas/Escritorio/VonHumboldt/chorus_experiments/datos_test/anuraset",
     ANURA_PUBLIC_URL,
@@ -256,5 +256,5 @@ custome_fetcher = _make_fetcher(
     ['e1fc835fac6ee7973ee307ae64a584e6'],
     doc="Download the ANURA dataset by using a custome fetcher")
 
-custome_fetcher()
+custom_fetcher()
 '''
