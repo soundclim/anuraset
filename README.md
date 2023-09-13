@@ -11,11 +11,11 @@ We present a large-scale multi-species dataset of acoustics recordings of amphib
 
 The **Anuraset** is a labeled collection of 93k samples of 3-second-long passive acoustic monitoring recordings organized into 42 neotropical anurans species suitable for multi-label call classification. The dataset can be downloaded as a single .zip file (~10.5 GB):
 
-**[Download Anuraset](https://zenodo.org/record/8056090/files/anuraset.zip?download=1)**
+**[Download Anuraset](https://zenodo.org/record/8342596/files/anuraset.zip?download=1)**
 
 A more thorough description of the dataset is available in the original [paper](https://arxiv.org/abs/2307.06860).
 
-Additionally, we open the raw data and all the annotations (weak and strong labels). You can download all the data in [Zenodo](https://zenodo.org/record/8056090).
+Additionally, we open the raw data and all the annotations (weak and strong labels). You can download all the data in [Zenodo](https://zenodo.org/record/8342596).
 
 
 
