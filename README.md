@@ -13,7 +13,7 @@ The **Anuraset** is a labeled collection of 93k samples of 3-second-long passive
 
 **[Download Anuraset](https://zenodo.org/record/8342596/files/anuraset.zip?download=1)**
 
-A more thorough description of the dataset is available in the original [paper](https://arxiv.org/abs/2307.06860).
+A more thorough description of the dataset is available in the original [paper](https://doi.org/10.1038/s41597-023-02666-2).
 
 Additionally, we open the raw data and all the annotations (weak and strong labels). You can download all the data in [Zenodo](https://zenodo.org/record/8342596).
 
