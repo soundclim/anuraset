@@ -1,0 +1,8 @@
+pandas
+PyYAML
+torchmetrics
+torchsummary
+tqdm
+torch
+torchvision
+torchaudio

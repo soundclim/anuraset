@@ -240,21 +240,21 @@ fetch_anuraset_v3 = _make_fetcher(
     doc="Download the ANURA dataset version 3",
     unzip=True)
 
-# Example to download the anuraset v2 by using the default fetcher
+# Example to download the anuraset v3 by using the default fetcher
 #'''
 fetch_anuraset_v3()
 #'''
 
-# Example to download the anuraset v2 using a customized fetcher
+# Example to download the anuraset v3 using a customized fetcher
 '''
-custome_fetcher = _make_fetcher(
+custom_fetcher = _make_fetcher(
     "fetch_anuraset_v2",
     "/home/jrudascas/Escritorio/VonHumboldt/chorus_experiments/datos_test/anuraset",
     ANURA_PUBLIC_URL,
     ['datasetv2-multiclass_1.zip'],
     ['datasetv2-multiclass_1.zip'],
     ['e1fc835fac6ee7973ee307ae64a584e6'],
-    doc="Download the ANURA dataset by using a custome fetcher")
+    doc="Download the ANURA dataset by using a custom fetcher")
 
-custome_fetcher()
+custom_fetcher()
 '''
